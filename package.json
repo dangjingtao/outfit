@@ -1,6 +1,6 @@
 {
   "name": "d-outfit",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "main": "dist",
   "repository": "https://github.com/dangjingtao/outfit.git",
   "engines": {

@@ -99,3 +99,5 @@ export const getOutfit = (filename: string) => {
   // }
   return "";
 };
+
+export default getOutfit;

@@ -4,3 +4,4 @@ export declare const walkDir: ({ initPath, fileList, callback, blockSize, }: {
     callback?: ((a: any) => void) | undefined;
     blockSize?: number | undefined;
 }) => Promise<any[]>;
+export default walkDir;

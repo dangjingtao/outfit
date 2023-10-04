@@ -100,3 +100,4 @@ const getOutfit = (filename) => {
     return "";
 };
 exports.getOutfit = getOutfit;
+exports.default = exports.getOutfit;

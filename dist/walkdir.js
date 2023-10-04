@@ -23,7 +23,8 @@ const walkDir = async ({ initPath, fileList = [], callback = () => { }, blockSiz
         const isMov = (0, isMovie_1.default)(fileDir);
         const sizeBlock = stats.size < blockSize;
         if (isFile && isMov && !sizeBlock) {
-            callback && callback(stats);
+            callback &&
+                (await callback({ fileDir, filename: getMovieName(fileDir), stats }));
             fileList.push({ fileDir, filename: getMovieName(fileDir), stats });
         }
         if (isDirectory) {
@@ -39,3 +40,4 @@ const walkDir = async ({ initPath, fileList = [], callback = () => { }, blockSiz
     return fileList;
 };
 exports.walkDir = walkDir;
+exports.default = exports.walkDir;
