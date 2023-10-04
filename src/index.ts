@@ -1,14 +1,12 @@
-import walkDir from "./walkdir"
 // const regex = /[A-Z]{2,5}-\d{3,4}[A-Z]?/i
 
 const outfit = () => {
-  console.log("hehe", walkDir)
-}
+  console.log("hehe");
+};
 
-export default outfit
+export default outfit;
 // For CommonJS default export support
-// module.exports = outfit
-// module.exports.default = outfit
 
 // export * from "./errors"
-export { walkDir } from "./walkdir"
+export { walkDir } from "./walkdir";
+export { getOutfit } from "./getOutfit";
